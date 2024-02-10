@@ -26,7 +26,9 @@ def fun_part(shoos):
     criteria = int(input("-"))
     print(type(list(shoos[0].keys())))
     print(list(shoos[0].keys()))
-    pprint(sorted(shoos, key=lambda shoo: shoo[list(shoo.keys())[criteria - 1]]), sort_dicts=False)
+    for shoo in shoos:
+        print(shoo[list(shoo.keys())[criteria - 1]])
+#    pprint(sorted(shoos, key=lambda shoo: shoo[list(shoo.keys())[criteria - 1]]), sort_dicts=False)
 
 
 main()
