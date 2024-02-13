@@ -8,8 +8,8 @@ def main():
             linedict = {
                 "title": line.split(',')[0],
                 "color": line.split(',')[1],
-                "current_price": line.split(',')[2],
-                "full_price": line.split(',')[3],
+                "current_price": float(line.split(',')[2]),
+                "full_price": float(line.split(',')[3]),
                 "publish_date": line.split(',')[4].strip()
             }
             shoos.append(linedict)
