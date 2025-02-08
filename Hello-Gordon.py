@@ -18,15 +18,15 @@ def main():
 
 def fun_part(shoos):
     print("Choos, how i should sort the shoos!")
-    print("1-title")
-    print("2-color")
-    print("3-current_price")
-    print("4-full_price")
-    print("5-publish_date")
+    print("0-title")
+    print("1-color")
+    print("2-current_price")
+    print("3-full_price")
+    print("4-publish_date")
     criteria = int(input("-"))
     print(type(list(shoos[0].keys())))
     print(list(shoos[0].keys()))
-    pprint(sorted(shoos, key=lambda shoo: shoo[list(shoo.keys())[criteria - 1]]), sort_dicts=False)
+    pprint(sorted(shoos, key=lambda shoo: shoo[list(shoo.keys())[criteria]]), sort_dicts=False)
 
 
 main()
